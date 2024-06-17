@@ -1,9 +1,29 @@
-# Blog Assombrado
+<!-- {"layout": "section-header", "hash": "assombracoes"} -->
+# Assombrações 👻
+## Faça o **Blog Assombrado**
 
-Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
+- Atividade de hoje
+- Transformando uma lista em **um menu**
+<!-- {ul:.content} -->
 
-[seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/main-positioning.zip
+---
+<!-- {"backdrop": "assombrado"} -->
 
+---
+# Atividade de Hoje
+
+- Completar a página inicial do "Blog Assombrado"
+- [Baixe os arquivos][assombrado-seminal] contendo o HTML e faça os exercícios
+  - O resultado final tem que ser semelhante ao [desta imagem](../../images/assombrado.jpg)
+  - Leia as instruções detalhadas no arquivo `README.md`. No geral:
+    1. Converter as `<div>`s e `<span>`s em _tags_ semânticas
+       - Pode haver algumas que não possuem _tags_ semânticas
+    1. Estilizar o menu principal
+    1. Colocar "Novidade!" antes dos 2 posts mais recentes
+
+[assombrado-seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/master.zip
+
+---
 
 ## Atividade
 
