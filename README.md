@@ -21,7 +21,7 @@
     1. Estilizar o menu principal
     1. Colocar "Novidade!" antes dos 2 posts mais recentes
 
-[assombrado-seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/positioning.zip
+[assombrado-seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/positioning/positioning.rar
 
 ---
 
