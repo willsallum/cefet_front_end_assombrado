@@ -2,7 +2,7 @@
 
 Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
 
-[seminal]: https://github.com/fegemo/cefet-front-end-assombrado/archive/main-positioning.zip
+[seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/positioning.zip
 
 
 ## Atividade
@@ -205,4 +205,4 @@ Pesquise na Internet como fazer isso.
 
 
 
-[propriedade-position]: https://fegemo.github.io/cefet-front-end/classes/css4/#valores-position
+[propriedade-position]: https://willsallum.github.io/cefet_front_end/classes/css4/#valores-position
