@@ -7,9 +7,6 @@
 <!-- {ul:.content} -->
 
 ---
-<!-- {"backdrop": "assombrado"} -->
-
----
 # Atividade de Hoje
 
 - Completar a página inicial do "Blog Assombrado"
