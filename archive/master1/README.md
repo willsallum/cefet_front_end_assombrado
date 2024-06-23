@@ -1,4 +1,4 @@
-# Blog Assombrado
+# Blog Assombrado 👻👻👻
 
 Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
 
@@ -201,8 +201,6 @@ Pesquise na Internet como fazer isso.
    ```html
    <script src="caminho-para-arquivo.js"></script>
    ```
-
-
 
 
 [propriedade-position]: https://willsallum.github.io/cefet_front_end/classes/css4/#valores-position

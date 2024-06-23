@@ -220,6 +220,4 @@ Pesquise na Internet como fazer isso.
    ```
 
 
-
-
 [propriedade-position]: https://willsallum.github.io/cefet_front_end/classes/css4/#valores-position
