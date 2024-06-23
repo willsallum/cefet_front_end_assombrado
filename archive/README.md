@@ -1,4 +1,4 @@
-# Blog Assombrado
+# Blog Assombrado 👻👻👻
 
 Um blog sobre o desconhecido **versão 2**. Baixe o [código seminal][seminal].
 
