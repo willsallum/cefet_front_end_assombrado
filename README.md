@@ -1,4 +1,4 @@
-<!-- {"layout": "section-header", "hash": "assombracoes"} -->
+<!-- {"layout": "title"} -->
 # Assombrações 👻
 ## Faça o **Blog Assombrado**
 
