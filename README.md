@@ -1,223 +1,132 @@
-<!-- {"layout": "title"} -->
-# Assombrações 👻
-## Faça o **Blog Assombrado**
+# Blog Assombrado
 
-- Atividade de hoje
-- Transformando uma lista em **um menu**
-<!-- {ul:.content} -->
+Um blog sobre o desconhecido. Baixe o [código seminal][seminal].
 
----
-# Atividade de Hoje
+[seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/mestre.zip
 
-- Completar a página inicial do "Blog Assombrado"
-- [Baixe os arquivos][assombrado-seminal] contendo o HTML e faça os exercícios
-  - O resultado final tem que ser semelhante ao [desta imagem](../../images/assombrado.jpg)
-  - Leia as instruções detalhadas no arquivo `README.md`. No geral:
-    1. Converter as `<div>`s e `<span>`s em _tags_ semânticas
-       - Pode haver algumas que não possuem _tags_ semânticas
-    1. Estilizar o menu principal
-    1. Colocar "Novidade!" antes dos 2 posts mais recentes
-
-[assombrado-seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/master.zip
-
----
 
 ## Atividade
 
-Você deve fazer mais algumas adaptações no blog assombrado e o resultado
-final pode ser visto a seguir. Nosso objetivo é treinar o uso da propriedade
-`position`, das propriedades `top, right, bottom, left` e `z-index`.
+Você deve fazer algumas partes que faltam do blog assombrado.
 
-![O resultado final da prática](resultado.png)
-
-Lembre-se de reduzir a duração do vídeo para agilizar o seu exercício
-(vide [FAQ](#faq)).
-
-## Exercício 1: _tags_ parecendo botões
-
-Estilize as _tags_ que ficam na nuvem de _tags_ (elemento `#tags`) de
-forma que, ao serem clicadas¹, elas sejam **deslocadas** `2px` para
-cima e `2px` para a esquerda da posição onde elas estão
-originalmente posicionadas.
-
-- Veja [os valores para a propriedade `position`][propriedade-position]
-  para decidir se neste caso deve ser usado `static`, `relative`, `absolute`
-  ou `fixed`.
-
-![](imgs/tags-como-botoes.gif)
+![O resultado final da prática](resultado.jpg)
 
 
-Além de alterar a posição das _tags_ quando clicadas, altere também o
-cursor do mouse. Veja [como alterar o cursor no FAQ](#faq).
+## Exercício 0: encurtar a duração do vídeo
 
-### ¹: "ao serem clicadas"
+Abra a página no navegador. Assista uma vinheta bem legal. Faça isso duas vezes,
+e tudo ainda estará bem. A partir da terceira, aguardar os 11s do vídeo
+terminar passa a ser a pior coisa do mundo.
 
-Podemos usar a pseudo-classe `:active` para estilizar elementos no
-momento em que estão sendo clicados. Você já usou isso para estilizar
-_links_ da seguinte forma:
+Portanto, veja no [FAQ](#faq) como fazer o vídeo desaparecer mais rapidamente.
 
-```css
-a:link {
-}
+## Exercício 1: _tags_ semânticas
 
-a:visited {
-}
+Converta as `<div>` e `<span>` nas _tags_ semânticas mais adequadas,
+**se houver**.
 
-a:hover {
-}
+- **Pode ser que não exista uma _tag_ semântica** em alguns casos - aí
+  continua sendo `<div>` ou `<span>` mesmo
+- Veja as [_tags_ semânticas nos slides][tags-semanticas]
 
-a:active {
-  /* se aplica aos <a>...</a> quando estão sendo clicados */
-}
-```
+**Atenção**: ao alterar o HTML (mudar uma tag para outra, mudar ou tirar
+uma `class` ou um `id`), deve-se verificar se são necessárias alterações nos
+arquivos CSS e em códigos JavaScript.
 
-Repare que **é possível usar `:active`** não apenas nas _tags_
-`<a>...</a>` (de hiperlinks), mas **em qualquer elemento**.
+Por exemplo, se você tirar o `id` da `<div id="header">...</div>`,
+faça uma busca por `#header` no arquivo CSS para verificar se precisa alterá-lo
+de forma que os estilos continuem se aplicando mesmo depois da alteração.
 
-## Exercício 2: títulos em cima das imagens
+## Exercício 2: menu horizontal
 
-Na seção das principais postagens (elemento `#posts-principais`),
-estilize cada `<article class="post">...</article>` de forma que o
-título da postagem fique sobreponha a imagem, em vez de ficar
-abaixo. Além da posição, coloque um fundo semitransparente (tipo
-`background-color: rgba(255, 255, 255, 0.5);`) para tornar legível.
+Torne horizontal a lista com o menu principal. Faça de forma que o menu
+fique semelhante ao da imagem final (lá em cima). Veja como
+[transformar uma lista não ordenada em uma lista horizontal][lista-horizontal].
 
-![](imgs/titulos-nas-imagens.png)
+Você vai precisar usar a propriedade `display`.
+[Veja como nos slides][propriedade-display].
 
+## Exercício 3: "Novidade!"
 
-## Exercício 3: botão "voltar ao topo" ↑
+Usando pseudo-elementos ([slides][pseudo-coisas]), faça com que toda
+postagem que possui a classe `.novidade` tenha o texto "Novidade!"
+imediatamente antes do seu conteúdo (como na imagem lá em cima). Use
+sua criatividade para estilizar de uma forma bonita e legal.
 
-Ao final do `<main>...</main>` (a última coisa dentro dele), (a) crie
-um hiperlink (`<a>...</a>`) com atributo `href="#topo-da-pagina"`
-(que é o `id` que o professor colocou no `<header></header>`) e
-coloque, dentro do elemento `<a></a>`, apenas esta setinha: ↑ (copie
-aqui e cole lá).
+## Exercício 4: seleção de texto
 
-Após criar o elemento e ver que ele apareceu na página, você deve
-estilizá-lo. Primeiramente, (b) coloque um `id` nele com o nome
-`voltar-topo`. Fazendo isso, o hiperlink já vai ficar com fundo branco,
-setinha alaranjada e borda, porque já existe uma regra CSS estilizando
-alguém que tenha esse `id`. Logo, fica **faltando apenas você definir
-o posicionamento e suas coordenadas**.
+Ao selecionar o texto em uma página, o navegador escolhe uma cor de fundo e
+para o texto para mostrar o que foi selecionado.
 
-Quando a página rolar, o (c) botão deve permanecer sempre a `15px`
-de distância à direita e abaixo em relação à janela, e não à página
-(_i.e._, ele nunca sai do lugar, mesmo quando o usuário rolar a
-barra de rolagem).
+Usando pseudo-elementos novamente ([slides][pseudo-coisas]),
+estilize as seleções de texto que ocorrerem (a) dentro do cabeçalho,
+(b) dentro do rodapé e dentro de `#tags` - de alguma forma que elas
+fiquem diferentes do texto selecionado no "miolo" da página.
 
-![](imgs/botao-voltar-ao-topo.png)
-
-
-## Desafio 1: fantasmas **Boo**
-
-![](imgs/boo1.gif)
-![](imgs/boo2.gif)
-![](imgs/boo3.gif)
-
-Coloque alguns (por exemplo, 3) _boos_ do Super Mario para assombrar
-a página, ao final do `<main></main>` (logo antes da tag de
-fechamento, dentro dele). Eles devem estar posicionados de forma
-que acompanhem a rolagem da página, ou seja, se o usuário rolar a
-página eles não devem ficar parados (isso é `position: fixed`
-ou `absolute`?). As posições x,y deles devem ser definidas por você
-e não precisam estar iguais na imagem do resultado final.
-
-Há três imagens na pasta `imgs`:
-
-- `imgs/boo1.gif`
-- `imgs/boo2.gif`
-- `imgs/boo3.gif`
-
-Use a propriedade `opacity` com um valor próximo de 0 (é sempre entre 0 e 1)
-para deixar os _boos_ semitransparentes. Quando o mouse passar sobre²
-um deles, ele deve ficar opaco (`opacity: 1;`). Afinal, é isso que
-fantasmas fazem.
-
-Se quiser, você pode alterar seu tamanho (coloquei `width: 40px` nos meus)
-e também invertê-los horizontalmente para fazê-los olharem para a esquerda
-(veja o [FAQ](#faq)).
-
-**OPCIONAL**: ao terminar de estilizá-los, coloque uma classe
-`boo` em cada uma dessas imagens (a classe tem que ter esse nome, exatamente),
-então, inclua o arquivo `boos.js` na página. Veja
-[como incluir um arquivo JavaScript no FAQ](#faq).
-
-### ²: "mouse passar sobre"
-
-Lembre-se da pseudo-classe `:hover` que costumamos usar para _links_ mas
-podemos usar para estilizar qualquer elemento no momento em que o mouse
-paira sobre ele.
-
-## Desafio 2: título visível apenas no `:hover`
-
-Em vez de ter o título sempre visível, faça com que o texto apareça
-apenas quando o mouse estiver em cima do `article.post`, como no vídeo
-a seguir:
-
-![](imgs/titulos-nas-imagens.gif)
-
-Como eu fiz:
-
-- Os títulos (`.titulo`) dentro de `.post` que está nesta seção
-  (`#posts-principais`) possuem:
-  - `top: 20px`
-  - `opacity: 0`  
-- Quando o `.post` está em `:hover`, o `.titulo` tem:
-  - `top: 6px`
-  - `opacity: 1`
-
-Por fim, é possível fazer com que a `opacity` e o `top` variem
-lentamente entre (`0` e `1`) e (`20px` a `6px`), em vez de trocar
-o valor instantaneamente. Veja
-no [FAQ como configurar uma transição](#faq).
-
-
-## Desafio 3: "nuvem de _tags_" grudenta
-
-Existe um outro valor para a propriedade `position` chamado `sticky`
-(grudento). A ideia é não deixar que alguns elementos "saiam de vista"
-quando a página é rolada para baixo.
-
-![](imgs/nuvem-sticky.gif)
-
-Neste exercício, queremos deixar a nuvem de _tags_ (elemento `#tags`)
-grudenta, de forma que, quando a página for rolada, ela acompanhe a
-rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
-Pesquise na Internet como fazer isso.
+Se parecer não estar funcionado, veja a discussão no terceiro tópico
+do [FAQ](#faq).
 
 ## FAQ
 
-1. Toda hora tenho que **assistir o vídeo**?? Sacanagem, né?!
+1. **Toda hora tenho que assistir** o vídeo?? Sacanagem, né?!
    - No arquivo `index.html`, ao final do `<body>...</body>` há um pequeno
      código JavaScript que faz o vídeo sumir e o conteúdo principal aparecer
-   - Altere o tempo (de 11s) para algo menor
-1. Como alterar o **cursor do mouse**?
-   - Em CSS existe a propriedade `cursor` e, com o valor `pointer`, o mouse fica com o desenho de "dedinho clicando"
-   - Ao dizer que um elemento tem `cursor: pointer`, por exemplo, o navegador entende que o desenho do mouse deve ser alterado quando ele estiver sobre esse elemento
-1. Como **configurar uma transição**?
-   - Veremos a sintaxe completa em uma aula futura mas, por hoje, para que um elemento altere suas propriedades "lentamente", basta usar nele a propriedade `transition` da seguinte forma:
+   - Altere o tempo (de 11s) para algo menor (eg, de **11000 para 1100**)
+1. Mudei umas _tags_ de `<div>` para semântica e, de repente, **o conteúdo
+   principal da página sumiu**. Por quê?
+   - Isso aconteceu por causa do pequeno código JavaScript que tem ao final
+     `<body>`.
+   - Veja algumas linhas do arquivo `index.html`:
+     ```html
+     <script>
+       // faz o vídeo desaparecer de leve assim que terminar
+       let tempo = 11000;  // 11s, duração do vídeo
+       setTimeout(() => {
+           // LINHA A: faz o vídeo desaparecer colocando a classe .desaparecido
+           document.querySelector('.backdrop').classList.add('desaparecido');
+           // LINHA B: faz o conteúdo principal surgir, retirando a classe .desaparecido
+           document.querySelector('#conteudo-principal').classList.remove('desaparecido');
+       }, tempo);
+       // ...
+     </script>
+     ```
+     - A "linha B" vai dar erro se não existir um elemento na página com um
+       `id="conteudo-principal"`
+       - Se você tiver removido o `id` desse elemento, uma opção é colocá-lo
+         de volta
+       - Outra opção é alterar a "linha B" para selecionar o elemento que tinha
+         o `id="conteudo-principal"` a partir do nome de sua _tag_
+         - Para isso, você pode usar o comando em JavaScript:
+           ```js
+           // LINHA B
+           document.querySelector('NOME_DA_TAG').classList.remove('desaparecido');
+           ```
+1. O pseudo-elemento relativo à seleção de texto é o `::selection` e é
+   tipicamente usado pra alterar a cor do texto e do fundo da seleção.
+   - A regra a seguir se aplica a todo o texto que está **diretamente**
+     em um parágrafo:
      ```css
-     .boo {
-       opacity: 0;
-       transition: all 200ms ease; /* <---- */
-     }
-     .boo:hover {
-       opacity: 1;
+     p::selection {
+       /* muda cor e cor de fundo aqui */
      }
      ```
-     - Neste caso, em vez de ir de 100% transparente para 100% opaco de uma vez, a opacidade varia de 0 até 1 ao longo de 200 milissegundos.
-1. Como **inverter uma imagem** horizontalmente?
-   - Veremos como fazer transformações em elementos em outra aula mas, por ora, se quiser inverter um elemento horizontal, você pode usar a propriedade `transform` nele da seguinte forma:
+     - Se houver um `<span>texto</span>` dentro desse parágrafo, a seleção
+       dentro do `<span>` não ficará com a cor diferente!
+   - A solução completa, para estilizar a seleção de tudo o que
+     estiver dentro de alguma coisa (por exemplo, de um parágrafo), deve
+     ser assim:
      ```css
-     .elemento-virado {
-       transform: scaleX(-1);
+     p::selection,
+     p ::selection {
+       /* muda cor e cor de fundo aqui */
      }
      ```
-1. Como incluir um **arquivo JavaScript**?
-   Para incluir um arquivo JavaScript em uma página HTML, basta usar a _tag_ `<script src="..."></script>` e passar, no atributo `src`, o caminho para o arquivo:
-   ```html
-   <script src="caminho-para-arquivo.js"></script>
-   ```
+     - Dessa forma, seleciona-se o pseudo-elemento da seleção do texto que
+       for exatamente filho do parágrafo, mas também da seleção de texto dentro
+       de qualquer um de seus descendentes (por exemplo, o texto dentro de um
+       `<span>` que está dentro de um `<p>`)
 
-
-[propriedade-position]: https://willsallum.github.io/cefet_front_end/classes/css4/#valores-position
+[tags-semanticas]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semanticos
+[lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semanticos
+[propriedade-display]: https://willsallum.github.io/cefet_front_end/classes/html5/#a-propriedade-display
+[pseudo-coisas]: https://willsallum.github.io/cefet_front_end/classes/html5/#pseudo-classes-e-pseudo-elements
