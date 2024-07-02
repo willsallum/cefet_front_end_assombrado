@@ -126,7 +126,7 @@ do [FAQ](#faq).
        de qualquer um de seus descendentes (por exemplo, o texto dentro de um
        `<span>` que está dentro de um `<p>`)
 
-[tags-semanticas]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semanticos
-[lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semanticos
-[propriedade-display]: https://willsallum.github.io/cefet_front_end/classes/html5/#a-propriedade-display
-[pseudo-coisas]: https://willsallum.github.io/cefet_front_end/classes/html5/#pseudo-classes-e-pseudo-elements
+[tags-semanticas]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
+[lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
+[propriedade-display]: https://willsallum.github.io/cefet_front_end/classes/html5/#divitite-e-tags-semânticas-especificidade-epseudo-coisas
+[pseudo-coisas]: https://willsallum.github.io/cefet_front_end/classes/html5/#mais-alguns-seletores
