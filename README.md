@@ -129,4 +129,4 @@ do [FAQ](#faq).
 [tags-semanticas]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
 [lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
 [propriedade-display]: https://willsallum.github.io/cefet_front_end/classes/html5/#divitite-e-tags-semânticas-especificidade-epseudo-coisas
-[pseudo-coisas]: https://willsallum.github.io/cefet_front_end/classes/html5/#mais-alguns-seletores
+[pseudo-coisas]: https://github.com/willsallum/cefet-front-end/tree/master/classes/html5#pseudo-classes-e-pseudo-elements
