@@ -9,7 +9,7 @@ Um blog sobre o desconhecido. Baixe o [código seminal][seminal].
 
 Você deve fazer algumas partes que faltam do blog assombrado.
 
-![O resultado final da prática](./resultado.jpg)
+![O resultado final da prática](https://github.com/willsallum/cefet_front_end_assombrado/resultado.jpg)
 
 
 ## Exercício 0: encurtar a duração do vídeo
