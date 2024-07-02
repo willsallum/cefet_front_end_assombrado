@@ -12,7 +12,7 @@ Você deve fazer mais algumas adaptações no blog assombrado e o resultado
 final pode ser visto a seguir. Nosso objetivo é treinar o uso da propriedade
 `position`, das propriedades `top, right, bottom, left` e `z-index`.
 
-![O resultado final da prática](resultado.png)
+![O resultado final da prática](../resultado.png)
 
 Lembre-se de reduzir a duração do vídeo para agilizar o seu exercício
 (vide [FAQ](#faq)).
@@ -28,7 +28,7 @@ originalmente posicionadas.
   para decidir se neste caso deve ser usado `static`, `relative`, `absolute`
   ou `fixed`.
 
-![](imgs/tags-como-botoes.gif)
+![](../imgs/tags-como-botoes.gif)
 
 
 Além de alterar a posição das _tags_ quando clicadas, altere também o
@@ -66,7 +66,7 @@ título da postagem fique sobreponha a imagem, em vez de ficar
 abaixo. Além da posição, coloque um fundo semitransparente (tipo
 `background-color: rgba(255, 255, 255, 0.5);`) para tornar legível.
 
-![](imgs/titulos-nas-imagens.png)
+![](../imgs/titulos-nas-imagens.png)
 
 
 ## Exercício 3: botão "voltar ao topo" ↑
@@ -89,14 +89,14 @@ de distância à direita e abaixo em relação à janela, e não à página
 (_i.e._, ele nunca sai do lugar, mesmo quando o usuário rolar a
 barra de rolagem).
 
-![](imgs/botao-voltar-ao-topo.png)
+![](../imgs/botao-voltar-ao-topo.png)
 
 
 ## Desafio 1: fantasmas **Boo**
 
-![](imgs/boo1.gif)
-![](imgs/boo2.gif)
-![](imgs/boo3.gif)
+![](../imgs/boo1.gif)
+![](../imgs/boo2.gif)
+![](../imgs/boo3.gif)
 
 Coloque alguns (por exemplo, 3) _boos_ do Super Mario para assombrar
 a página, ao final do `<main></main>` (logo antes da tag de
@@ -138,7 +138,7 @@ Em vez de ter o título sempre visível, faça com que o texto apareça
 apenas quando o mouse estiver em cima do `article.post`, como no vídeo
 a seguir:
 
-![](imgs/titulos-nas-imagens.gif)
+![](../imgs/titulos-nas-imagens.gif)
 
 Como eu fiz:
 
