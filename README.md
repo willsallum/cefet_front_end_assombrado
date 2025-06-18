@@ -127,6 +127,6 @@ do [FAQ](#faq).
        `<span>` que está dentro de um `<p>`)
 
 [tags-semanticas]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
-[lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#elementos-semânticos-13
+[lista-horizontal]: https://willsallum.github.io/cefet_front_end/classes/html5/#transformando-uma-lista-em-um-menu
 [propriedade-display]: https://willsallum.github.io/cefet_front_end/classes/html5/#divitite-e-tags-semânticas-especificidade-epseudo-coisas
 [pseudo-coisas]: https://willsallum.github.io/cefet_front_end/classes/html5#pseudo-classes-e-pseudo-elements
