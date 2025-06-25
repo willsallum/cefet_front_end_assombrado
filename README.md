@@ -2,7 +2,7 @@
 
 Um blog sobre o desconhecido. Baixe o [código seminal][seminal].
 
-[seminal]: https://github.com/willsallum/cefet_front_end_assombrado/tree/main/archive/master.zip
+[seminal]: https://github.com/willsallum/cefet_front_end_assombrado/archive/master.zip
 
 
 ## Atividade
